@@ -1,0 +1,89 @@
+/* Dark theme */
+:root {
+	--bg: #10100f;
+	--bg-body: #1a1a1a;
+	--bg-button-hv: #1c1c1c;
+	--bg-menu: #121211;
+	--bg-player-fix: #121211;
+	--bg-scroll: #141414;
+	--bg-splash: #212121;
+	--bg-toast: var(--bg);
+	--bg-toast-error: #911d1d;
+	--bg-trash: #10100faa;
+	--border: #1e1e1e;
+	--border-cover: #3c3c3c;
+	--box-shadow: #10100f;
+	--focus: #1d91f0;
+	--focus-dim: #1a6eac;
+	--scroll: #292929;
+	--scroll-hv: #3c3c3c;
+	--text: #b4b4b4;
+	--text-dim: #696969;
+	--text-li-parent: #4c4c4c;
+	--text-locked: #5a5a5a;
+/*	--text-shadow* not used */
+}
+
+/* Based on mov.im, orange focus */
+html.blue {
+	--bg: #10151a;
+	--bg-button-hv: #192028;
+	--bg-body: #141a21;
+	--bg-menu: #141a21;
+	--bg-player-fix: #141a21;
+	--bg-toast: var(--bg);
+	--bg-trash: #10151aaa;
+	--bg-scroll: #181e27;
+	--scroll: #30353c;
+	--scroll-hv: #5a6367;
+	--bg-splash: #30353c;
+	--border: #171f26;
+	--border-cover: #212b36;
+	--focus: #eb6600;
+	--focus-dim: #b35000;
+}
+
+/* Blue + hue rotation -60, orange focus */
+html.green {
+	--bg: #101a15;
+	--bg-button-hv: #1a2922;
+	--bg-body: #14211b;
+	--bg-menu: #14211b;
+	--bg-player-fix: #14211b;
+	--bg-toast: var(--bg);
+	--bg-trash: #101a15aa;
+	--bg-scroll: #182620;
+	--scroll: #313d38;
+	--scroll-hv: #59665d;
+	--bg-splash: #313d38;
+	--border: #17261e;
+	--border-cover: #21362b;
+	--focus: #ef6c00;
+	--focus-dim: #b35000;
+}
+
+/* Green focus */
+html.focusgreen {
+	--focus: #00bd35;
+	--focus-dim: #00800f;
+}
+
+*, *:before { text-shadow: none !important }
+
+#cover { opacity: .7 }
+	#cover:hover, #cover.nofade { opacity: 1 }
+
+@media (min-width: 541px) {
+	body, #player.fix, #player.fix button:hover { background-image: url("music.theme.svg") }
+	#player.fix button:not(:hover) { background: none }
+	body > div { box-shadow: 0 0 3px #242424 }
+}
+
+/* Display songs in tree horizontally 
+#tree li.song {
+	display: inline-block;
+	margin-right: 2.5em;
+}*/
+
+/* Set a fixed height for the playlist
+#playlist { height: 7.75em !important }*/
